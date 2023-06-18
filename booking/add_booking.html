@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Booking</title>
+  </head>
+
+  <body>
+    <form action="add_booking.php" method="POST">
+      <table>
+        <tr>
+          <td>Room ID:</td>
+          <td><input type="text" name="room_id_input" required /></td>
+        </tr>
+        <tr>
+          <td>Start Date:</td>
+          <td><input type="date" name="start_date_input" /></td>
+        </tr>
+        <tr>
+          <td>End Date:</td>
+          <td><input type="date" name="end_date_input" /></td>
+        </tr>
+        <tr>
+          <td>Staff ID:</td>
+          <td><input type="number" name="staff_id_input" /></td>
+        </tr>
+        <tr>
+          <td>Student_ID:</td>
+          <td><input type="number" name="student_id_input" /></td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Submit" name="submit" /></td>
+        </tr>
+      </table>
+    </form>
+
+    <a href="list_of_booking.php"><button>Booking List</button></a>
+  </body>
+</html>
