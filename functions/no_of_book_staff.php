@@ -1,7 +1,6 @@
 <?php
     function getNumberOfBookingsByStaff($staff_id) {
-        $conn = new mysqli('localhost', 'root', '', 'venue_booking_test');
-
+        include '../db_connection.php';
         if ($conn->connect_error) {
             echo "Connection Failed: " . $conn->connect_error;
             return false;
@@ -29,7 +28,7 @@
     $staff_id = $_POST['staff_id_input'];
     $total_bookings = getNumberOfBookingsByStaff($staff_id);
 
-    $conn = new mysqli('localhost', 'root', '', 'venue_booking_test');
+    include '../db_connection.php';
 
     if ($total_bookings !== false) {
         echo "Total Bookings for Staff ID " . $staff_id . ": " . $total_bookings . "<br>";

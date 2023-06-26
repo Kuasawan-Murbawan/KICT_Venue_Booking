@@ -6,8 +6,8 @@
     $student_id = $_POST['student_id_input'];
     $current_date = date("Y-m-d");
 
-    $conn = new mysqli('localhost', 'root', '', 'venue_booking_test');
-
+    include '../db_connection.php';
+ 
     if($conn->connect_error) {
         echo "Connection Failed: " . $conn->connect_error;
     } else {

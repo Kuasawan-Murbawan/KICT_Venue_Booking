@@ -1,7 +1,7 @@
 
 
 <?php
-    $conn = new mysqli('localhost', 'root', '', 'venue_booking_test');
+    include '../db_connection.php';
 ?>
 
 <!DOCTYPE html>

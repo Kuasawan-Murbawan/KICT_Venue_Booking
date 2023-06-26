@@ -1,7 +1,8 @@
 <?php
 
+include '../db_connection.php';
+
 $book_id = $_POST['book_id_input'];
-$conn = new mysqli('localhost', 'root', '', 'venue_booking_test');
 
 $sql = "CALL CANCEL_BOOKING(?);";
 $stmt = $conn->prepare($sql);

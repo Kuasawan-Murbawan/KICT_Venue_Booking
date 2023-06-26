@@ -1,12 +1,12 @@
 <?php
+    include '../db_connection.php';
 
     $student_id = $_POST['student_id'];
     $student_name = $_POST['student_name'];
     $student_dept = $_POST['student_dept'];
     $student_year = $_POST['student_year'];
 
-    $conn = new mysqli('localhost', 'root', '', 'venue_booking_test');
-
+ 
     if($conn->connect_error){
         echo "Connection Failed : ".$conn->connect_error;
     }

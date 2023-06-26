@@ -1,11 +1,10 @@
 <?php
+    include '../db_connection.php';
 
     $staff_id = $_POST['staff_id'];
     $staff_name = $_POST['Staff_Name'];
     $staff_dept = $_POST['staff_dept'];
     $staff_salary = $_POST['staff_salary'];
-
-    $conn = new mysqli('localhost', 'root', '', 'venue_booking_test');
 
     if($conn->connect_error){
         echo "Connection Failed : ".$conn->connect_error;

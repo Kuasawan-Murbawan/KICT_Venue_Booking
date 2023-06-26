@@ -3,7 +3,7 @@
 $room_id = $_POST['room_id_input'];
 $date = $_POST['date_input'];
 
-$conn = new mysqli('localhost', 'root', '', 'venue_booking_test');
+include '../db_connection.php';
 
 $sql = "SELECT CHECK_ROOM_AVAILABILITY(?, ?, ?) AS availability";
 $stmt = $conn->prepare($sql);
