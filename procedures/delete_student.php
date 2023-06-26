@@ -1,7 +1,8 @@
 <?php
 
+include '../db_connection.php';
+
 $student_id = $_POST['student_id_input'];
-$conn = new mysqli('localhost', 'root', '', 'venue_booking_test');
 
 $sql = "CALL DELETE_STUDENT(?);";
 $stmt = $conn->prepare($sql);
