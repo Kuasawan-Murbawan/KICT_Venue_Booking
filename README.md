@@ -15,6 +15,7 @@ Website Link -> https://kict-venue-booking.000webhostapp.com/homepage.html
 - Booking tables and Student tables have a many-to-one relationship which means a booking can only be booked by one student, but a student can book multiple bookings (one book per month).
 - Student table and Staff table have a one-to-one relationship, which means a student that wants to do venue booking will have only one staff member to record and save the information into the system.
 
+## Data Dictionary
 ### Room
 
 | Attribute Name | Data Type | Size | Constraint |
